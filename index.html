@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Animals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pick a beast to view a picture of it!</h1>
+    <form id="form-animals">
+      <select id="selectbox" data-selected="">
+        <option value="" selected="selected" disabled="disabled">
+          Select an animal
+        </option>
+        <option id="dog-opt" value="1">Dogs</option>
+        <option id="cat-opt" value="2">Cats</option>
+        <option id="fox-opt" value="3">Foxes</option>
+      </select>
+      <input
+        id="submit-btn"
+        class="submit"
+        type="button"
+        name=""
+        value="Visa djur"
+      />
+    </form>
+    <div class="images" data-selected="">
+      <img class="animal-img" id="animal-img" src="" />
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
